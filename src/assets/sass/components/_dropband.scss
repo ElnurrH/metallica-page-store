@@ -1,0 +1,58 @@
+.dropdown {
+    .dropdown-menu{
+        display: flex;
+    }
+  .dropdown-time {
+    background-image: url("./bg/menu-band-timeline.jpg");
+    background-size: cover;
+    height: 40vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    a {
+      z-index: 1;
+    }
+
+    &:hover .overlay-left {
+      background-color: rgba(0, 0, 0, 0.745)
+    }
+    .overlay-left {
+      width: 50%;
+      height: 40vh;
+      background-color: rgba(0, 0, 0, 0.5);
+     
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .dropdown-history {
+    background-image: url("./bg/menu-band-history.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    a {
+      z-index: 1;
+    }
+    &:hover .overlay-right {
+      background-color: rgba(0, 0, 0, 0.745)
+    }
+
+    .overlay-right {
+      width: 50%;
+      height: 40vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

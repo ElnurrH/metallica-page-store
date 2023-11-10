@@ -1,0 +1,26 @@
+//Global Styles
+@import "../sass/base";
+
+
+//Dropdowns
+@import "../sass/components/dropnews";
+@import "../sass/components/dropband";
+@import "../sass/components/dropmusic";
+@import '../sass/components/dropmedia';
+@import '../sass/components/dropShop';
+@import '../sass/components/dropfans';
+
+
+
+//Components
+@import "../sass/components/header";
+@import "../sass/components/hero";
+@import '../sass/components/shop-section';
+@import '../sass/components/footer';
+@import '../sass/components/shop-slider';
+@import '../sass/components/details';
+@import '../sass/components/loader';
+@import '../sass/components/cart';
+@import '../sass/components/profile';
+@import '../sass/components/section';
+@import '../sass/components/form'

@@ -1,0 +1,80 @@
+.shop-banner {
+  background-image: url("./bg/store-main_banner.jpg");
+  width: 100%;
+  height: 55vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+
+  display: none;
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    .banner-row {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      gap: 50px;
+      .link-list {
+        width: 15%;
+        z-index: 7;
+        margin-top: 15vh;
+
+        .link {
+          margin-top: 10px;
+          font-weight: 500;
+          a {
+            &:hover {
+              border-bottom: 1px solid white;
+            }
+          }
+        }
+        .heading {
+          font-weight: 700;
+        }
+        .top-mg {
+          margin-top: 50px;
+        }
+        .special {
+          font-weight: 700;
+        }
+      }
+      .banner {
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        .bg-top {
+          background-image: url("./bg/store-main_banner.jpg");
+          background-size: contain;
+          background-size: cover;
+          width: 250px;
+          height: 160px;
+          z-index: 11;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+        .bg-bottom {
+          background-image: url("./bg/menu-music-releases.jpg");
+          background-size: contain;
+          width: 250px;
+          height: 160px;
+          z-index: 11;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+.nav-bar .nav-item:hover .shop-banner {
+  display: block;
+}

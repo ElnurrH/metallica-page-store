@@ -1,0 +1,37 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  .hero-bg {
+    background-image: url("./bg/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    width: 100%;
+    height: 100vh;
+  }
+  .triangle-top {
+    width: 0;
+    height: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 120px 0 100px 60vw;
+    border-color: transparent transparent transparent #ffffff;
+
+    position: absolute;
+    bottom: 11%;
+  }
+  .triangle-bottom {
+    width: 0;
+    height: 0;
+
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 221px 0 0px 99vw;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    bottom: 0%;
+  }
+}

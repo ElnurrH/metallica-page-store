@@ -1,0 +1,31 @@
+.fans-dropdown {
+  background-image: url("../components/bg/metclub-banner.jpg");
+  background-position: bottom, center;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+
+  display: none;
+  .link-row {
+    margin-top: 18vh;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+
+    .drop-items {
+      a {
+        &:hover {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
+.nav-bar .nav-item:hover .fans-dropdown {
+  display: block;
+}

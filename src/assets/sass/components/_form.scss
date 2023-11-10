@@ -1,0 +1,91 @@
+.form{
+    width: 100%;
+    height: 100%;
+    .container{
+        height: 100%;
+        .row{
+            width: 100%;
+            height: 100%;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 200px;
+            gap: 30px;
+           @media (max-width:425px) {
+            flex-direction: column;
+           }
+           
+            // @media(max-width:425px){
+            //     align-items: flex-start;
+            //     justify-content: flex-start;
+            // }
+            .heading{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 50%;
+                @media (max-width:425px){
+                    width: 100%;
+                }
+                h2{
+                    font-size: 30px;
+                    font-weight: 800;
+                    
+
+                }
+                p{
+                    font-weight: 600;
+                    
+                }
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 60%;
+                @media(max-width:425px){
+                    width: 50%;
+                }
+                label {
+                  font-size: 18px;
+                  font-size: 800;
+                }
+                input {
+                  padding: 10px;
+                  border: 1px solid gray;
+                  outline: 0;
+                  &:focus {
+                    border: 1px solid black;
+                  }
+                }
+                .check {
+                  display: flex;
+                  gap: 20px;
+                  input {
+                    border: 5px solid black;
+                  }
+                }
+                
+                  button {
+                    width: 100%;
+                    color: white;
+                    font-weight: 600;
+                    padding: 15px 20px;
+                    border: 1px solid black;
+                    background-color: black;
+                    transition: 0.3s ease;
+                    outline: 0;
+                    cursor: pointer;
+                    &:hover {
+                      background-color: white;
+                      color: black;
+                    }
+                  }
+                  p {
+                    text-align: center;
+                  }
+                }
+              }
+        }
+    }

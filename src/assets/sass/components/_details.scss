@@ -1,0 +1,181 @@
+.details {
+  width: 100%;
+  height: 100vh;
+  @media (max-width:768px){
+    padding-bottom: 300px ;
+  }
+  .container {
+    height: 100%;
+    .row {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      .product-row {
+        width: 50%;
+        height: 70%;
+        border: 1px solid #f6f5f4;
+        margin-top: 100px;
+        @media (max-width:768px){
+          width: 100%;
+          height: 50%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+
+        }
+      }
+      .data-row {
+        margin-top: 100px;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 200px;
+        @media (max-width:768px){
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        .link-row {
+          display: flex;
+          gap: 10px;
+          li {
+            a {
+              color: black;
+              font-size: 12px;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .badge {
+          background-color: black;
+          width: fit-content;
+          font-size: 12px;
+          font-weight: 700;
+          padding: 2px;
+          display: flex;
+          gap: 2px;
+          img {
+            object-position: center;
+            object-fit: contain;
+          }
+          p {
+            color: white;
+            font-size: 12px;
+          }
+        }
+        h1 {
+          font-size: 34px;
+          font-weight: 700;
+        }
+        .price {
+          color: red;
+          font-weight: 700;
+        }
+        .data-btn {
+          width: 100%;
+          display: flex;
+          gap: 20px;
+          .counter {
+            border: 1px solid black;
+            width: 20%;
+            display: flex;
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 33%;
+              height: 30px;
+              font-weight: 700;
+              user-select: none;
+              &.counter-btn {
+                cursor: pointer;
+                text-align: center;
+              }
+            }
+          }
+          .add-to-cart {
+            width: 50%;
+            color: white;
+            background-color: black;
+            border: 1px solid black;
+            outline: 0;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 15px 40px;
+            font-weight: 700;
+            transition: 0.3s ease;
+            &:hover {
+              color: black;
+              background-color: white;
+            }
+          }
+        }
+        .dropdown-container {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-button {
+          background-color: white;
+          color: black;
+          border: 0;
+          outline: 0;
+          padding: 10px;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          font-size: 20px;
+          font-weight: 500;
+          padding: 20px;
+        }
+        
+        .arrow {
+          margin-left: 8px;
+          transition: transform 0.3s;
+        }
+        
+        .arrow.up {
+          transform: rotate(180deg);
+        }
+        
+        .dropdown-content {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 4%;
+          width: 100%;
+          border-top: 1px solid #ddd;
+         
+          height: 100%;
+          z-index: 999;
+          display: none;
+          @media (max-width:768px){
+            width: 100%;
+          }
+         ul{
+          width: 100%;
+          height: 100%;
+          li{
+            list-style-type:disc;
+          }
+         }
+        }
+        
+        .dropdown-container:hover .dropdown-content {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,503 @@
+.profile {
+  width: 100%;
+  height: 100%;
+  .container {
+    height: 100%;
+
+    .row {
+      height: 100%;
+      width: 100%;
+      padding-top: 200px;
+      padding-bottom: 50px;
+      display: flex;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+
+      .left {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+        border-right: 1px solid gray;
+        border-top: 1px solid gray;
+        @media (max-width: 1024px) {
+          width: 100%;
+          font-size: 10px;
+          gap: 15px;
+          border-top: 1px solid gray;
+          border-bottom: 1px solid gray;
+        }
+        .info {
+          display: flex;
+          gap: 10px;
+          span {
+            font-size: 10px;
+            font-weight: 700;
+            a {
+              color: black;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          .sign {
+            color: black;
+          }
+          span {
+            color: gray;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .content-asset-top {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          h3 {
+            font-weight: 700;
+          }
+          a {
+            color: black;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .content-asset-bottom {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          h3 {
+            font-weight: 700;
+          }
+          a {
+            color: black;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .mid {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+        border-top: 1px solid gray;
+        @media (max-width: 1024px) {
+          width: 100%;
+          font-size: 10px;
+          gap: 15px;
+        }
+        .heading {
+          display: flex;
+          h2 {
+            font-size: 34px;
+            font-weight: 800;
+          }
+          span {
+            align-self: flex-end;
+            font-size: 10px;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          label {
+            font-size: 18px;
+            font-size: 800;
+          }
+          input {
+            padding: 10px;
+            border: 1px solid gray;
+            outline: 0;
+            &:focus {
+              border: 1px solid black;
+            }
+          }
+          span{
+            color: #a71e2d;
+          }
+          .check {
+            display: flex;
+            gap: 20px;
+            input {
+              border: 5px solid black;
+            }
+          }
+          .login {
+            display: flex;
+            justify-content: space-between;
+            button {
+              width: 50%;
+              color: white;
+              font-weight: 600;
+              padding: 15px 20px;
+              border: 1px solid black;
+              background-color: black;
+              transition: 0.3s ease;
+              outline: 0;
+              cursor: pointer;
+              &:hover {
+                background-color: white;
+                color: black;
+              }
+            }
+            p {
+              text-align: center;
+            }
+            
+          }
+        }
+      }
+      .mid-user {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+        border-top: 1px solid gray;
+        .card-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .top {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            gap: 10px;
+            @media (max-width: 1024px) {
+              flex-direction: column;
+            }
+            a {
+              width: 100%;
+              height: 100%;
+              @media (max-width: 1024px) {
+                width: 100%;
+                height: 100%;
+              }
+
+              .box-left {
+                display: flex;
+                justify-content: center;
+
+                width: 100%;
+                height: 100%;
+                // width: 100%;
+                // height: 100%;
+                padding: 40px;
+                background-image: url("../components/bg/dashboard-personal-info.webp");
+                background-position: center;
+                background-size: contain;
+
+                &:hover {
+                  h4,
+                  p {
+                    text-decoration: underline;
+                  }
+                }
+                .heading {
+                  display: flex;
+                  flex-direction: column;
+                  h4 {
+                    color: white;
+                  }
+                  p {
+                    color: white;
+                  }
+                }
+                span {
+                  align-self: flex-end;
+
+                  color: white;
+                  border: 1px solid white;
+                  padding: 7px;
+                }
+              }
+            }
+            a {
+              width: 50%;
+              height: 100%;
+              .box-right {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                padding: 40px;
+                background-image: url("../components/bg/dashboard-orders.webp");
+                background-position: center;
+                background-size: contain;
+                &:hover {
+                  h4,
+                  p {
+                    text-decoration: underline;
+                  }
+                }
+                .heading {
+                  display: flex;
+                  flex-direction: column;
+                  h4 {
+                    color: white;
+                  }
+                  p {
+                    color: white;
+                  }
+                }
+                span {
+                  align-self: flex-end;
+
+                  color: white;
+                  border: 1px solid white;
+                  padding: 7px;
+                }
+              }
+            }
+          }
+          .middle {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            gap: 10px;
+            a {
+              width: 100%;
+              height: 50%;
+              .box-left {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                // width: 100%;
+                // height: 100%;
+                padding: 40px;
+                background-image: url("../components/bg/dashboard-addresses.webp");
+                background-position: center;
+                background-size: contain;
+                &:hover {
+                  h4,
+                  p {
+                    text-decoration: underline;
+                  }
+                }
+                .heading {
+                  display: flex;
+                  flex-direction: column;
+                  h4 {
+                    color: white;
+                  }
+                  p {
+                    color: white;
+                  }
+                }
+                span {
+                  align-self: flex-end;
+
+                  color: white;
+                  border: 1px solid white;
+                  padding: 7px;
+                }
+              }
+            }
+            a {
+              width: 100%;
+              height: 50%;
+              .box-right {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                padding: 40px;
+                background-image: url("../components/bg/dashboard-payment-settings.webp");
+                background-position: center;
+                background-size: contain;
+                &:hover {
+                  h4,
+                  p {
+                    text-decoration: underline;
+                  }
+                }
+                .heading {
+                  display: flex;
+                  flex-direction: column;
+                  h4 {
+                    color: white;
+                  }
+                  p {
+                    color: white;
+                  }
+                }
+                span {
+                  align-self: flex-end;
+
+                  color: white;
+                  border: 1px solid white;
+                  padding: 7px;
+                }
+              }
+            }
+            // .card-list{
+            //   width: 100%;
+            //   height: 30%;
+            //   display: flex;
+            //   .card-box{
+            //     background-image: url('../components/bg/dashboard-personal-info.webp');
+            //   padding: 50px;
+            //     background-position: center;
+            //     background-size: contain;
+            //     background-repeat: no-repeat;
+            //     width: 100%;
+            //     a{
+            //       display: flex;
+            //       .top{
+            //        position: relative;
+            //        top: 0;
+            //        left: 0;
+            //       }
+            //       .bottom{
+            //         align-self: flex-end;
+            //       }
+            //     }
+            //   }
+            // }
+          }
+          .bottom {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            gap: 10px;
+            a {
+              width: 100%;
+              height: 50%;
+              .box-left {
+                display: flex;
+                justify-content: center;
+
+                width: 100%;
+                height: 100%;
+                padding: 40px;
+                background-image: url("../components/bg/dashboard-presale.webp");
+                background-position: center;
+                background-size: contain;
+                &:hover {
+                  h4,
+                  p {
+                    text-decoration: underline;
+                  }
+                }
+                .heading {
+                  display: flex;
+                  flex-direction: column;
+                  h4 {
+                    color: white;
+                  }
+                  p {
+                    color: white;
+                  }
+                }
+                span {
+                  align-self: flex-end;
+
+                  color: white;
+                  border: 1px solid white;
+                  padding: 7px;
+                }
+              }
+            }
+            a {
+              width: 50%;
+              height: 100%;
+              .box-right {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                padding: 40px;
+                background-image: url("../components/bg/dashboard-vinyl-club.webp");
+                background-position: center;
+                background-size: contain;
+                &:hover {
+                  h4,
+                  p {
+                    text-decoration: underline;
+                  }
+                }
+                .heading {
+                  display: flex;
+                  flex-direction: column;
+                  h4 {
+                    color: white;
+                  }
+                  p {
+                    color: white;
+                  }
+                }
+                span {
+                  align-self: flex-end;
+
+                  color: white;
+                  border: 1px solid white;
+                  padding: 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+        border-top: 1px solid gray;
+        @media (max-width: 1024px) {
+          width: 100%;
+          font-size: 10px;
+          gap: 15px;
+        }
+        .heading {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          h2 {
+            font-size: 32px;
+            font-weight: 800;
+            @media (max-width: 322px) {
+              font-size: 28px;
+            }
+          }
+        }
+        a {
+          width: 80%;
+          color: black;
+          font-weight: 600;
+          padding: 15px 20px;
+          text-align: center;
+          border: 1px solid black;
+          background-color: white;
+          transition: 0.3s ease;
+          outline: 0;
+          cursor: pointer;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

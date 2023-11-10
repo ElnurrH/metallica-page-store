@@ -1,0 +1,415 @@
+.shop-slider {
+  width: 100%;
+  height: 110vh;
+  .mySwiper {
+    z-index: 0;
+    .swiper-pagination-bullet {
+      background-color: #acacac;
+      border-radius: 0;
+      width: 40px;
+      height: 5px;
+      margin-right: 3px;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #d32930;
+    }
+    .swiper-button-next, .swiper-button-prev {
+      color: #acacac;
+      padding: 20px;
+     &:hover{
+      background-color: black;
+     }
+    }
+
+    .slider {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bg {
+        img {
+          width: 100vw;
+          height: 110vh;
+        }
+      }
+      .details {
+        position: absolute;
+        color: white;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+          font-size: 60px;
+          font-weight: 800;
+        }
+        p {
+          font-size: 21px;
+          font-weight: 700;
+        }
+        a {
+          color: white;
+          font-weight: 600;
+          padding: 15px 20px;
+          border: 1px solid white;
+          transition: 0.3s ease;
+          &:hover {
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}
+// .mid-section{
+//   height: 70vh;
+//   .container{
+//     .row{
+//       .slider{
+//         height: 100%;
+//         width: 100%;
+//         display: flex;
+//         .slider-slide{
+//           width: 100%;
+//           height: 100%;
+//           .product-card {
+//             // width: 100%;
+//             // height: 70%;
+//             z-index: 0;
+//             width: auto;
+//             height: 20%;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 20px;
+//             // flex: 30% ;
+          
+//             .img-box {
+//               width: 100%;
+//               height: 30rem;
+//               opacity: 1;
+//               border: 1px solid #f6f5f4;
+//               cursor: pointer;
+          
+//               img {
+//                 width: 100%;
+//                 max-height: 100%;
+//               }
+//             }
+//           }
+//           .product-info {
+//             width: 100%;
+//             height: 30%;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 5px;
+//             .span {
+//               background-color: black;
+//               width: fit-content;
+//               font-size: 12px;
+//               font-weight: 700;
+//               padding: 2px;
+//               display: flex;
+//               gap: 2px;
+//               img {
+//                 object-position: center;
+//                 object-fit: contain;
+//               }
+//               p {
+//                 color: white;
+//                 font-size: 12px;
+//               }
+//             }
+//             a {
+//               color: black;
+//               font-weight: 600;
+//               font-size: 14px;
+//               &:hover {
+//                 text-decoration: underline;
+//               }
+//             }
+//             p {
+//               color: #a71e2d;
+//               font-weight: 700;
+//               font-size: 14px;
+//             }
+//           }
+//         }
+       
+//       }
+//     }
+//   }
+  
+// }
+.shop-section {
+  width: 100%;
+  height: 100%;
+  
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+      .animation {
+        position: absolute;
+        z-index: 0;
+        margin-top: -100px;
+        h1 {
+          font-size: 360px;
+          color: #f6f5f4;
+        }
+      }
+      .products {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        // display: flex;
+
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        // flex-wrap: wrap;
+        @media (max-width: 420px) {
+          .products {
+            flex-direction: column;
+            .product-card {
+              width: 100%;
+              flex-wrap: wrap;
+            }
+          }
+        }
+
+        .product-card {
+          // width: 100%;
+          // height: 70%;
+          z-index: 0;
+          width: auto;
+          height: 20%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          // flex: 30% ;
+
+          .img-box {
+            width: 100%;
+            height: 30rem;
+            opacity: 1;
+            border: 1px solid #f6f5f4;
+            cursor: pointer;
+
+            img {
+              width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+        .product-info {
+          width: 100%;
+          height: 30%;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .span {
+            background-color: black;
+            width: fit-content;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 2px;
+            display: flex;
+            gap: 2px;
+            img {
+              object-position: center;
+              object-fit: contain;
+            }
+            p {
+              color: white;
+              font-size: 12px;
+            }
+          }
+          a {
+            color: black;
+            font-weight: 600;
+            font-size: 14px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          p {
+            color: #a71e2d;
+            font-weight: 700;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+.merch {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 200px 0;
+  margin-top: 300px;
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+      .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 20px;
+        @media (max-width: 1024px) {
+          flex-direction: column;
+        }
+
+        .left {
+          width: 50%;
+          height: 100%;
+          margin-top: -150px;
+          @media (max-width: 1024px) {
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+          }
+          a {
+            width: 100%;
+            height: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .right {
+          width: 50%;
+          @media (max-width: 1024px) {
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+          }
+          a {
+            width: 100%;
+            height: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bg-link {
+  background-image: url("./bg/Vinyl-Bundle-Sale-No-Text-Banner.webp");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+  .container {
+    height: 100%;
+    
+
+    .row {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+        h2 {
+            color: white;
+          font-size: 60px;
+          font-weight: 800;
+          text-align: center;
+        }
+      a {
+        color: white;
+        font-weight: 600;
+        padding: 15px 20px;
+        border: 1px solid white;
+        transition: 0.3s ease;
+        &:hover {
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+.news{
+  width: 100%;
+  height: 100%;
+  padding-top: 200px;
+  .container{
+    height: 100%;
+    .row{
+      width: 100%;
+      height: 100%;
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+      .heading{
+        width: 100%;
+        height: 10%;
+        h2{
+          font-weight: 700;
+        }
+      }
+      .top{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        gap: 30px;
+        @media(max-width:1024px){
+flex-direction: column;
+        }
+        .image{
+          width: 70%;
+          height: 500px;
+          @media(max-width:1024px){
+            width: 100%;
+          }
+          
+          img{
+            width: 100%;
+            height: 100%;
+            
+          }
+        }
+      }
+      .info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p{
+          font-size: 20px;
+          font-weight: 600;
+        }
+        h3{
+          font-size: 30px;
+          font-weight: 700;
+        }
+        a {
+          width: 80%;
+          color: black;
+          font-weight: 600;
+          padding: 15px 20px;
+          text-align: center;
+          border: 1px solid black;
+          background-color: white;
+          transition: 0.3s ease;
+          outline: 0;
+          cursor: pointer;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
